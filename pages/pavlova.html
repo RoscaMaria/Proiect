@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavlova</title>
+
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--my css-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" class="logo-link">
+        <img
+          height="40"
+          src="C:\Users\Maria\Desktop\Curs Web It School\Proiect\photos\logo.png"
+          alt="Logo"
+        />
+      </a>
+
+      <div>
+        <!--Hidden in web, needed for mobile-->
+        <label for="toggle" class="material-icons">menu</label>
+        <input type="checkbox" id="toggle" />
+
+        <!--the actual menu-->
+        <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#recipe-week">Recipe of the week</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container-fluid recipe">
+        <div class="row">
+          <div class="banner col 12 mt-3 mb-3 col-md-6 photo-recipe">
+            <img
+              src="C:\Users\Maria\Desktop\Curs Web It School\Proiect\photos\pavlova1.jpg"
+              alt="pavlova"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-6 mt-5 time-recipe">
+            <h3 class="recipe-title mb-5">Pavlova with summer berries</h3>
+            <p class="mb-4 recipe-description">
+              “Piled high with fresh seasonal fruit, this pavlova recipe is an
+              absolute summer show-stopper ”
+            </p>
+            <p><span class="highlight">Serves:</span> 10 people</p>
+            <p>
+              <span class="highlight">Cooks in:</span> 1 hour and 25 minutes
+            </p>
+            <p><span class="highlight">Dificulty: </span>Showing off</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid instructions">
+        <div class="row">
+          <div class="col-12 col-sm-3 ingredients">
+            <h5 class="fw-bolder">Ingredients</h5>
+
+            <h6 class="fw-bolder">MERINGUE</h6>
+            <ul>
+              <li>6 large free-range egg whites</li>
+              <li>300 g caster sugar</li>
+            </ul>
+            <h6 class="fw-bolder">PAVLOVA</h6>
+            <ul>
+              <li>400 g fresh strawberries and raspberries</li>
+              <li>200 ml double cream</li>
+              <li>200 ml fat-free natural yoghurt</li>
+              <li>2 tablespoons caster suga</li>
+              <li>1 vanilla pod</li>
+              <li>a few sprigs of fresh mint</li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-9 method">
+            <h5 class="fw-bolder">Method</h5>
+            <ol>
+              <li>
+                Preheat the oven to 150°C/300°F/gas 2. Put your egg whites into
+                a clean bowl and whisk them at a medium speed until they start
+                to form nice firm peaks.
+              </li>
+              <li>
+                With your mixer still running, gradually add the sugar and a
+                pinch of sea salt. Turn the mixer up to the highest setting and
+                whisk for 7 to 8 minutes more until the meringue is white,
+                glossy and smooth. If it feels grainy, whisk for a little bit
+                longer, being careful not to let the meringue collapse.
+              </li>
+              <li>
+                Line two baking trays with baking paper. Divide the meringue
+                mixture evenly between them and shape each blob into a circle
+                about 20cm in diameter.
+              </li>
+              <li>
+                Put both trays into the oven and bake for 1 hour until the
+                meringues look slightly golden and are fluffy in the middle.
+              </li>
+              <li>
+                Halve or quarter the large strawberries and leave the smaller
+                ones whole. Mix them with the raspberries.
+              </li>
+              <li>
+                Whip the cream with the sugar until it forms soft peaks, then
+                stir in the yoghurt. Halve the vanilla pod lengthways, scrape
+                out the seeds and fold them into the creamy mixture.
+              </li>
+              <li>
+                Spoon half the cream mixture on top of one of the meringue
+                halves and smooth it out. Sprinkle half of your berries evenly
+                around the cream mixture. Place the other meringue on top and
+                press down gently to stick them together.
+              </li>
+              <li>
+                Spread the remaining cream mixture over the top layer and
+                sprinkle the remaining berries on top. Pick a few small mint
+                leaves, scatter over and enjoy!
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div>@Rosca Maria all rights reserved</div>
+    </footer>
+    <!--bootstrap javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

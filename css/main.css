@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+     /* Color palette */
+    --green-10: #87BBA2;
+    --green-50: #55828B;
+    --green-100: #3B6064;
+    --yellow-50: #E7BB41;
+    --white-10: #FDFFFC;
+    --white-50: #F4F9E9;
+    --black-10: #68655f;
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--white-50);
+    overflow-y: scroll;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/*navigare*/
+
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 10%;
+  height: 60px;
+
+  background-color: var(--green-50);
+  color: var(--white-50);
+  }
+
+  #navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  #navbar ul li {
+    padding: 8px 12px;
+  }
+
+  #navbar ul li a {
+    text-decoration: none;
+    color: var(--white-50);
+  }
+
+  #navbar ul li a:hover {
+    color: var(--yellow-50);
+  }
+
+  #navbar input[type="checkbox"] {
+    display: none;
+  }
+
+  #navbar label {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    #navbar ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        text-align: center;
+        border-top: 1px solid var(--green-50);
+    }
+
+    #navbar label {
+        display: block;
+    }
+
+    #toggle:checked + #menu {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60px;
+        background-color: var(--green-10);
+    }
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    background-color: var(--green-50);
+    color: var(--white-10);
+  }
+
+  .container .card {
+    min-width: 250px;
+    max-width: 100%;
+    background-color: var(--white-50);
+    border: none;
+  }
+
+  .container .card img {
+    max-height: 300px;
+  }
